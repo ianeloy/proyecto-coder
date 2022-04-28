@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "download": "^8.0.0"
+  },
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "implementacion sass",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss assets/scss/style.scss assets/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "start": "nodemon Server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianeloy/proyecto-coder.git"
+  },
+  "author": "bian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ianeloy/proyecto-coder/issues"
+  },
+  "homepage": "https://github.com/ianeloy/proyecto-coder#readme"
+}
